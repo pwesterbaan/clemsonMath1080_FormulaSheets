@@ -81,14 +81,14 @@
       &\multicolumn{2}{c}{\includegraphics[width=0.175\linewidth,trim={0 0 0 50pt}, clip]{shellMethod_x}}&
       \multicolumn{2}{c}{\includegraphics[width=0.175\linewidth]{shellMethod_y}}\\\midrule
       %
-      \lnret[c]{Arc length\\$\sqrt{\parens{\frac{dx}{dx}}^2+\parens{\frac{dy}{dx}}^2}$}&& 
+      \lnret[c]{Arc length\\$\sqrt{\parens{\vphantom{\frac{dy}{dx}}\frac{dx}{dx}}^2+\parens{\frac{dy}{dx}}^2}$}&& 
       $\ds \mathllap{L=}\int_a^b \sqrt{1+\sbrkt{f'(x)}^2}\,dx$\\\midrule
       %
       \lnret[c]{Surface area\\ $2\pi r\cdot h$}&&
       $\ds \mathllap{S=}\int_a^b 2\pi f(x)\sqrt{1+\sbrkt{f'(x)}^2}\,dx$\\\midrule
       \lnret[c]{Mass\\$\rho\cdot d$}&& $\mathllap{m=}\ds\int_a^b \rho\,dx$\\\midrule
       \lnret[c]{Work\\$F\cdot d$}&& $\mathllap{W=}\ds\int_a^b F(x)\,dx$\\\midrule
-      Chain with load&& $\mathllap{W=}\ds\int_0^L \rho g (L-y)\,dy+ mgy$\\\midrule
+      Chain with load&& $\mathllap{W=}\ds\int_0^L \rho g (L-y)\,dy+ mgL$\\\midrule
       Pumping&& $\mathllap{W=}\ds\int_a^b \rho g A(y)(h-y)\,dy$\\\midrule
       Force-on-dam&& $\mathllap{F=}\ds\int _0^a\rho g\underbrace{(a-y)}_{\text{depth}}\underbrace{w(y)}_{\text{width}}dy$
       \\\bottomrule[1.25pt]
