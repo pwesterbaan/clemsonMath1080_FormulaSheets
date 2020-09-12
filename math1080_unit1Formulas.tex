@@ -17,7 +17,7 @@
   \begin{center}
     \textit{Note}: Let $f(x)$ and $g(y)$ represent the area between 2 functions where appropriate.
     %\renewcommand{\arraystretch}{1.35}
-    \begin{tabular}{@{}l@{\hspace*{15pt} }*{2}{m{0.1\linewidth}m{0.30\linewidth}}@{}}
+    \begin{tabular}{@{}l@{\hspace*{15pt} }*{2}{m{0.0975\linewidth}m{0.27\linewidth}}@{}}
       \toprule[1.25pt]
       Velocity& \multicolumn{4}{l}{$F(b)-F(a)=\ds\int_a^b f(x)\,dx \hspace*{20pt}\Longrightarrow\hspace*{20pt} v(t)=v(0)+\int_0^t a(x)\,dx$}\\\midrule
       %
@@ -81,7 +81,7 @@
       &\multicolumn{2}{c}{\includegraphics[width=0.175\linewidth,trim={0 0 0 50pt}, clip]{shellMethod_x}}&
       \multicolumn{2}{c}{\includegraphics[width=0.175\linewidth]{shellMethod_y}}\\\midrule
       %
-      \lnret[c]{Arc length\\$\sqrt{\parens{\vphantom{\frac{dy}{dx}}\frac{dx}{dx}}^2+\parens{\frac{dy}{dx}}^2}$}&& 
+      \lnret[r]{Arc length\\$\mathclap{\sqrt{\parens{\vphantom{\frac{dy}{dx}}\frac{dx}{dx}}^2+\parens{\frac{dy}{dx}}^2}}$}&& 
       $\ds \mathllap{L=}\int_a^b \sqrt{1+\sbrkt{f'(x)}^2}\,dx$\\\midrule
       %
       \lnret[c]{Surface area\\ $2\pi r\cdot h$}&&
@@ -90,7 +90,8 @@
       \lnret[c]{Work\\$F\cdot d$}&& $\mathllap{W=}\ds\int_a^b F(x)\,dx$\\\midrule
       Chain with load&& $\mathllap{W=}\ds\int_0^L \rho g (L-y)\,dy+ mgL$\\\midrule
       Pumping&& $\mathllap{W=}\ds\int_a^b \rho g A(y)(h-y)\,dy$\\\midrule
-      Force-on-dam&& $\mathllap{F=}\ds\int _0^a\rho g\underbrace{(a-y)}_{\text{depth}}\underbrace{w(y)}_{\text{width}}dy$
+      Force-on-dam&& $\mathllap{F=}\ds\int _0^a\rho g\underbrace{(a-y)}_{\text{depth}}\underbrace{w(y)}_{\text{width}}dy$\\\midrule
+      \lnret[l]{Integration\\by parts} &&$\ds\mathllap{\int u\,dv=}\, uv-\int v\,du$
       \\\bottomrule[1.25pt]
     \end{tabular}
   \end{center}
